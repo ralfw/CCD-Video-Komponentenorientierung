@@ -1,0 +1,74 @@
+Video Komponentenorientierung - Gliederung und Planung
+
+todo ralf:
+-github repo aufsetzen, dieses dok auch ins repo
+
+1. Wo ist das Problem?
+todo: visualisierungen finden und herstellen für metaplan wand
+
+Geldverschwendung:
+- Zeit wird nicht optimal genutzt für Kunde, da Mergekonflikte aufhalten. Geldverschwendung. (codeorga)
+- Durch Featuredeveloper entsteht Geldverschwendung, weil Realisierung lange dauert und damit Feedback verzögert wird. Außerdem wird potenziell parallel in einer Weise entwickelt, die in eine falsche Richtung geht, weil Feedback fehlt. (arbeitsorga)
+- Cashflow wird verzögert, weil ja nur bei Fertigstellung gezahlt wird. Entwickler müssen Geld vorstrecken, bis Kunde zahlt. (Kredit notwendig. Zinsen müssen gezahlt werden.) (arbeitsorga)
+- Unfokussierte Arbeit macht langsam, führt zu fehlern. (codeorga)
+- Abhängigkeiten wachsen unkontrolliert. Das verringert Wartbarkeit. (codeorga)
+- Geringere Wiederverwendbarkeit führt zu wiederholten Entwicklungen. Keine binären black boxes. (codeorga)
+
+Inflexibilität:
+- Beschränkung in der Arbeitsorga auf Featuredeveloper; wenig Flexibilität, es zumindest im Notfall auch mal anders zu tun, um die Geschwindigkeit an einem Feature zu erhöhen. (arbeitsorga)
+- Beschränkung in der Möglichkeit, weitere Entwickler ins Spiel zu bringen. Sie müssen nämlich quasi immer alles verstehen. (arbeitsorga)
+- Optimierungen durch Spezialisten wird leichter möglich, weil man die an einzelne Komponenten setzen kann. (arbeitsorga)
+
+Inflexibilität kostet am Ende auch Geld. Am Geld hängt also alles.
+
+2. die lösung kommt durch bessere orga
+todo:
+- arbeitsorga und code orga (textuell) visualisieren, so dass an der metaplan wand darunter etwas angeordnet werden kann
+- visualisierung mit dem presenter während der vorstellung
+
+- arbeitsorga: hat mit den leuten zu tun, wie sind die aufgeteilt/zugeteilt? (feature team, man power, spezialisierung)
+- code orga: hat mit der codeaufteilung zu tun
+
+die probleme der codeorga bzw arbeitsorga zuordnen. dafür die probleme vorher knackig visualisieren, damit sie hier wiedererkennbar zusammengefasst werden können. an der metaplan wand umsortieren.
+
+allgemein:
+bei der darstellung der lösungen immer wieder bezug auf probleme nehmen. das warum einer lösung daran erklären.
+damit wird der zuschauer in die lage versetzt, lösungsteile wegzulassen, wenn er ein problem gar nicht hat.
+
+3. lösung  für die code orga probleme
+binäre codeeinheit
+kontrakt
+definition von komponente
+verzeichnisstruktur 1: bin, lib, bin.contracts
+ignore regeln
+
+4. lösung für die arbeitsorga probleme
+todo: build scripts in FB und msbuild als beispiel
+
+feature team
+
+komponentenwerkbank
+- build prozess muss dann explizit sein
+verzeichnisstruktur 2: src, src.contracts, scr.host
+
+5. entwurf
+was ist entwurf?
+
+- komponenten sind teil der architektur, weil sie keine funktionale aufgabe haben
+- archi und modellierung nötig, um sie zu identifizieren
+
+kriterien fürs schneiden von komponenten.
+- technische aspekte, responsibilities, wiederverwendbarkeit
+- arbeitsorga - aber nur in linie mit den techn. aspekten
+
+6. zusammenfassung
+bezug zu den problemen nochmal herstellen. zurück zur metaplan wand.
+
+
+
+Vernünftig zusammenarbeiten an einer Codebasis auch verteilt an einer Codebasis.
+Kann an einem Feature sein oder auch nicht. Konfliktreduzierte Arbeit.
+
+Falls keine Rückprojektion, dann Screens ausdrucken und mit Presenter zeigen.
+Am besten gar keinen Code live tippen, sondern alles vorbereiten.
+
